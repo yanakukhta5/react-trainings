@@ -1,24 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import Questionnaire from './components/Guestionnaire/Guestionnaire';
 
 function App() {
+  const questions = [{
+      question: "Сколько будет 1+1?",
+      answer: '2',
+    }, {
+      question: "Сколько будет 2+1?",
+      answer: '3',
+    }, {
+      question: 'Как зовут Андрея?',
+      answer: 'Андрей'
+    },
+  ]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Questionnaire questions={questions} />
   );
 }
 
