@@ -1,9 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
-import Questionnaire from './components/Guestionnaire/Guestionnaire';
 
-function App() {
-  const questions = [{
+import './App.css';
+import { Guestionnaire } from './components/Guestionnaire/Guestionnaire';
+
+const questions = [{
       question: "Сколько будет 1+1?",
       answer: '2',
     }, {
@@ -12,10 +11,11 @@ function App() {
     }, {
       question: 'Как зовут Андрея?',
       answer: 'Андрей'
-    },
-  ]
+    },]
+    
+function App() {
   return (
-    <Questionnaire questions={questions} />
+    <Guestionnaire questions={questions} />
   );
 }
 

@@ -1,6 +1,7 @@
 import React from "react"
+import "./Guestion.css"
 
-export default class Guestion extends React.Component{
+class Guestion extends React.Component{
  constructor(props){
   super(props)
  }
@@ -13,3 +14,5 @@ export default class Guestion extends React.Component{
   </label> )
  }
 }
+
+export {Guestion}

@@ -1,12 +1,13 @@
-import Title from "./Title"
 import './Guestionnaire.css'
-import GuestionsBlock from "./GuestionsBlock"
+import {Block} from "./Block/Block"
 
-export default function Questionnaire(props){
+function Guestionnaire(props){
  return (
   <div className="Guestionnaire">
-   <Title />
-   <GuestionsBlock questions={props.questions} />
+   <h1>Анкета</h1>
+   <Block questions={props.questions} />
   </div>
  )
 }
+
+export {Guestionnaire}

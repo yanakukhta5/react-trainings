@@ -1,24 +1,15 @@
 import React from "react";
-import Guestion from "./Guestion";
-import Summary from "./Summary";
+import {Guestion} from "../Guestion/Guestion";
+import {Summary} from "../Summary/Summary";
 
-function fillArr(arr, value, count){
- for(let i=0; i < count; i++){
-  arr.push(value)
-  console.log(value)
- }
- return arr
-}
-
-
-export default class GuestionsBlock extends React.Component{
+class Block extends React.Component{
 
  constructor(props){
   super(props)
   this.questionCount = this.props.questions.length
   this.state = {
-   userAnswers: fillArr([], {answer: '', isRight: false}, this.questionCount),
-   isRightClass: fillArr([], 'unknown', this.questionCount),
+   userAnswers: new Array(this.questionCount).fill({answer: '', isRight: false}),
+   isRightClass: new Array(this.questionCount).fill('unknown'),
    summaryShow: 'hidden',
    right: 0,
   }
@@ -43,10 +34,14 @@ export default class GuestionsBlock extends React.Component{
     elem.isRight = true
     right++
    }
+   else{
+   elem.isRight = false
+   }
   })
   this.setState({isRightClass: this.state.isRightClass.map((elem, index) => JSON.parse(userAnswers[index]['isRight']) ? 'right' : 'wrong')})
   this.setState({right: right})
   this.setState({summaryShow: 'show'})
+  console.log(userAnswers)
  }
 
  render(){
@@ -72,3 +67,5 @@ export default class GuestionsBlock extends React.Component{
  )}
 
 }
+
+export {Block}

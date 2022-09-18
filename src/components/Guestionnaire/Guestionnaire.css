@@ -10,26 +10,8 @@ h1 {
  padding: 0px 20px;
  text-align: center;
 }
-.Guestion {
- border: 1px solid gray;
- margin-bottom: 20px;
- padding: 15px;
- display: block;
-}
 .input {
  margin-left: 20px;
-}
-.unknown {
- background-color: white;
-}
-.right {
- background-color: #cfeecf;
-}
-.wrong {
- background-color: #eecaca;
-}
-.summary {
- font-size: 30px;
 }
 .hidden {
  display: none;

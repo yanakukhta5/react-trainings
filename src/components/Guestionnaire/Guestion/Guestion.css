@@ -1,0 +1,16 @@
+
+.Guestion {
+ border: 1px solid gray;
+ margin-bottom: 20px;
+ padding: 15px;
+ display: block;
+}
+.unknown {
+ background-color: white;
+}
+.right {
+ background-color: #cfeecf;
+}
+.wrong {
+ background-color: #eecaca;
+}
