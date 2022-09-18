@@ -1,8 +1,12 @@
-import React from "react";
-import "./Summary.css"
+import React from 'react'
+import './Summary.css'
 
-function Summary({summaryShow, right, possible}){
- return <p className={`Summary ${summaryShow}`}>Правильных ответов: {right}/{possible}</p>
+function Summary({ summaryShow, right, possible }) {
+  return (
+    <p className={`Summary ${summaryShow}`}>
+      Правильных ответов: {right}/{possible}
+    </p>
+  )
 }
 
-export {Summary}
+export { Summary }

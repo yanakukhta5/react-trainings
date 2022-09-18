@@ -1,5 +1,3 @@
-
-import './App.css';
 import { Guestionnaire } from './components/Guestionnaire/Guestionnaire';
 
 const questions = [{
