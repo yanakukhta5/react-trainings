@@ -13,7 +13,7 @@ const questions = [{
     
 function App() {
   return (
-    <Guestionnaire questions={questions} />
+    <Guestionnaire questions={questions} /> 
   );
 }
 
