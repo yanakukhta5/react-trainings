@@ -2,12 +2,16 @@ import React from 'react'
 
 const theme = {
  day: {
-   backgroundColor: "white",
+   backgroundColor: "red",
    color: "black"
  },
  night: {
    backgroundColor: "black",
    color: "white"
+ },
+ colored: {
+  backgroundColor: "pink",
+  color: "green"
  }
 }
 
