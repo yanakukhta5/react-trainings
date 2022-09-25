@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react'
-import { Guestionnaire } from './components/Guestionnaire/Guestionnaire'
+import { theme } from './ThemeContext'
 
 const questions = [
   {
@@ -27,7 +27,7 @@ function App() {
   const [fullname, setFullname] = useState({ name: '', surname: '' })
   const user = useMemo(() => {userCreate(fullname)}, [fullname]) 
   return (
-    <div>
+    <div style={theme.night}>
       <input
         onChange={(event) =>
           setFullname({ ...fullname, name: event.target.value })
