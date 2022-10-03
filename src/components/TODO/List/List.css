@@ -1,0 +1,22 @@
+.li {
+ justify-content: start;
+ position: relative;
+ min-height: 60px;
+}
+p {
+ margin: 0;
+ text-align: start;
+}
+.title {
+ margin-bottom: 10px;
+}
+.button_edit {
+ position: absolute;
+ right: 10px;
+ top: 10px;
+}
+.button_delete {
+ position: absolute;
+ right: 10px;
+ top: 40px;
+}

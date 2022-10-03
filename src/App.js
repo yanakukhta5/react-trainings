@@ -1,9 +1,9 @@
-import React, { useState, useMemo } from 'react'
-import { SmallForm } from './components/SmallForm/SmallForm'
+import React from 'react'
 
 function App() {
   return (
-    <SmallForm />
+    <>
+    </>
   )
 }
 
