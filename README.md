@@ -1,1 +1,1 @@
-# :3
+# my react trainings :3
